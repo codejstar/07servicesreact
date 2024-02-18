@@ -1,0 +1,8 @@
+Employee and Dishes in app.js 
+
+<Employee id="4545" name='Jagdeep Jakhu' designation="software Engg" department="software Developer" year="2024-2025"/>
+<Employee id='6754' name='Kapil' designation="software Engg" department="software Developer" year="2024-2025"/>
+<Employee id='7765' name='Sonali' designation="software Engg" department="software Developer" year="2024-2025"/>
+
+<Dishes name='Tikka Masala' rating='10/10' discription='An iconic food from india.'/>
+<Dishes  name='Rogan Josh' rating='10/10' discription='An iconic food from india.'/> 

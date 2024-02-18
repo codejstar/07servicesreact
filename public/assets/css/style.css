@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+#box1{
+    color: aquamarine;
+    background-color: orchid;
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+}

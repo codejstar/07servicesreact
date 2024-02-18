@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+// import Divstyle from './component/Divstyle';
+// import Country from './component/Country';
+import Songs from './component/Songs';
+// import Location from './component/Location';
+// import Resturant from './component/Resturant';
+// import Style from './component/Style';
 
 function App() {
+  // let coutries = [{name:'India'},{name:'America'},{name:'Koria'},{name:'England'},{name:'Jamaica'}]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+          {/* <Location/> */}
+          <Songs/>
+          {/* <Country country={coutries}/> */}
+          {/* <Resturant/> */}
+          {/* <Style/> */}
+          {/* <Divstyle/> */}
     </div>
   );
 }
