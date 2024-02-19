@@ -1,5 +1,6 @@
 import React from 'react'
 import search_result from './data';
+import './External.css';
 
 const Resturant = () => {
   return (
