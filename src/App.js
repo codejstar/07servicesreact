@@ -5,7 +5,10 @@ import './App.css';
 // import Location from './component/Location';
 // import Resturant from './component/Resturant';
 // import Style from './component/Style';
-import Usestate from './component/Usestate';
+// import Usestate from './component/Usestate';
+import Calculator from './component/Calculator';
+// import Rating from './component/Rating';
+// import Ratingtable from './component/Ratingtable';
 
 
 function App() {
@@ -18,7 +21,11 @@ function App() {
           {/* <Resturant/> */}
           {/* <Style/> */}
           {/* <Divstyle/> */}
-          <Usestate/>
+          {/* <Usestate/> */}
+          <Calculator/>
+          {/* <Rating/> */}
+          {/* <Ratingtable/> */}
+
     </div>
   );
 }

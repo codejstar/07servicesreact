@@ -1,8 +1,7 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import './External.css'
 
-const Rating = () => {
-
+const Ratingtable = () => {
     const resturant = [
         {
             name: 'Apna dhaba',
@@ -37,25 +36,31 @@ const Rating = () => {
     ]
   return (
     <>
-<h1 className='py-5'>Resturants</h1>
- <div className="boxflex">
-    {
-        resturant.map((e,index) => (
-    
-            <div className="card" key={index} style={{width: "18rem"}}>
-               <img src={e.image} className="card-img-top" alt="..."/>
-                   <div className={e.rating === 5 ? "bg-success ": e.rating === 4 ? "bg-info": e.rating === 3 || e.rating === 2 ? "bg-warning" : e.rating === 1 ? "bg-danger": " " }>
-                   <h5 className="card-title">{e.name}</h5>
-                   <p className="card-text">Ratings: {e.rating}</p>
-                   <a href={0} className="btn btn-primary my-4 border-light">Order</a>
-             </div>
-            </div>
-        
-        ))
-    }
- </div>
+        <h1>Resturant</h1>
+                <table border="1px" cellSpacing={0} cellPadding={1}>
+                  <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Location</th>
+                        <th>img</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                       {
+                resturant.map((e,index) => (
+                        <tr key={index}>
+                            <td>{e.name}</td>
+                            <td className={e.rating === 5 ? "text-success" : e.rating === 4 ? "text-info": e.rating === 3 || e.rating === 2 ? "text-warning" : e.rating === 1 ? "text-danger" : ""}>{e.rating}</td>
+                            <td>{e.location}</td>
+                            <td><img src={e.image} alt="" /></td>
+                        </tr>
+                 ))
+                       }
+                  </tbody>
+                </table>
     </>
   )
 }
 
-export default Rating
+export default Ratingtable

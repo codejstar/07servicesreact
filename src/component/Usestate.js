@@ -14,7 +14,7 @@ const Usestate = () => {
          setV(v);
       }
       else{
-        console.log('something went wrong');
+        alert('something went wrong');
       }
    }
 
